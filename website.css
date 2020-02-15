@@ -1,0 +1,456 @@
+@import url('css/fonts.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Global overrides.
+ */
+html {
+  background-color: #f7f7f7;
+  background-image: url('images/noise.png');
+}
+
+body {
+  font-family: Lato, serif;
+  overflow-y: auto;
+  min-width: 360px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/**
+ * Footer links.
+ */
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  bottom: 0;
+  left: 0;
+  min-width: 360px;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-shadow: 1px 1px #e7e7e7;
+}
+
+footer .links {
+  font-size: 16px;
+  margin: 0;
+  width: inherit;
+}
+
+footer .links a {
+  color: #3399cc;
+  cursor: pointer;
+}
+
+footer .links .about.open {
+  color: #000;
+}
+
+footer .links a:active {
+  color: #bbb;
+}
+
+footer .links ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+footer .links ul li {
+  border-right: 1px solid #e7e7e7;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+footer .links ul li:last-child {
+  border-right: none;
+}
+
+footer .links .copy {
+  color: #a7a7a7;
+  float: right;
+  font-size: 10px;
+  position: relative;
+  right: 20px;
+}
+
+footer .links .copy a {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+/**
+ * Project slider (jSlipNSlide overrides)
+ */
+#projects {
+  border: 0;
+  border-bottom: 3px solid #2b2b2b;
+  box-shadow: 0 0 16px -8px #2b2b2b;
+  display: none;
+  height: 200px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#projects .slider {
+  background-color: #2b2b2b;
+  width: inherit;
+}
+
+#projects div,
+#projects div a,
+#projects div a img {
+  border: 0;
+  height: 200px;
+  width: 200px;
+}
+
+#projects div {
+  padding-right: 3px;
+}
+
+#projects div:last-child {
+  padding-right: 0;
+}
+
+#projects .slider_button_last,
+#projects .slider_button_next {
+  background-color: #000;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  color: #ccc;
+  font-size: 17px;
+  font-weight: bold;
+  height: 36px;
+  margin: 0;
+  opacity: 1.0;
+  position: absolute;
+  text-align: center;
+  top: 85px;
+  width: 30px;
+}
+
+#projects .slider_button_last {
+  left: 30px;
+  padding-right: 11px;
+}
+
+#projects .slider_button_next {
+  padding-left: 11px;
+  right: 30px;
+}
+
+#projects .slider_button_last span,
+#projects .slider_button_next span {
+  display: none;
+  height: 20px;
+  width: 8px;
+}
+
+#projects .slider_button_last:before {
+  background-image: url('images/button_arrow.svg');
+  content: '';
+  display: inline-block;
+  height: 14px;
+  transform: scaleX(1);
+  width: 16px;
+}
+
+#projects .slider_button_next:after {
+  background-image: url('images/button_arrow.svg');
+  content: '';
+  display: inline-block;
+  height: 14px;
+  transform: scaleX(-1);
+  width: 16px;
+}
+
+/**
+ * Main content.
+ */
+#about {
+  display: none;
+  left: -1200px;
+  margin: 6% auto;
+  max-width: 1200px;
+  min-width: 320px;
+  position: absolute;
+}
+
+#about.open {
+  position: static;
+}
+
+#about a:hover {
+  text-shadow: 2px 2px #e7e7e7;
+}
+
+#about .photo {
+  background-size: cover;
+  float: left;
+  margin-left: 50px;
+  margin-right: 40px;
+  position: relative;
+}
+
+#about .photo,
+#about .photo img {
+  border-radius: 7px;
+  box-shadow: 0 0 10px #eee;
+  float: left;
+  height: 100%;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+#about .photo .image1 {
+  position: relative;
+  z-index: 2;
+}
+
+#about .photo .image2 {
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+#about .summary {
+  float: left;
+  padding-top: 15px;
+  max-width: 600px;
+}
+
+#about .summary h2 {
+  font-family: Montserrat, serif;
+  font-size: 56px;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 10px 0 5px 0;
+}
+
+#about .summary p {
+  font-size: 21px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  padding-right: 30px;
+}
+
+#about .links {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  clear: both;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 10px 0;
+  text-align: center;
+  width: inherit;
+}
+
+#about .links a {
+  color: #3399cc;
+  padding: 0 5px;
+}
+
+#about .links a:active {
+  color: #bbb;
+}
+
+#intro {
+  min-width: 280px;
+  padding: 0 20px;
+  width: inherit;
+}
+
+#intro .message {
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #eee;
+  margin: 20% auto 0 auto;
+  max-width: 1000px;
+  min-height: 88px;
+}
+
+#intro .message {
+  font-size: 45px;
+  line-height: 42px;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+  max-width: 998px;
+}
+
+#intro .message a,
+#intro .message strong {
+  color: #3399cc;
+  cursor: pointer;
+  font-family: Montserrat, serif;
+  font-size: 42px;
+  font-weight: normal;
+  text-shadow: 2px 2px #e7e7e7;
+}
+
+#intro .message strong:hover {
+  text-shadow: 2px 2px #e7e7e7;
+}
+
+#intro .message .projects:active {
+  color: #bbb;
+}
+
+/**
+ * Responsive breakpoints.
+ */
+@media only screen and (min-width: 1px) and (max-width: 1280px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #about {
+    max-width: 500px;
+  }
+
+  #about .photo {
+    margin: 0;
+  }
+
+  #about .summary {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 1000px) {
+  #about .links {
+    display: block;
+  }
+
+  #about .photo img {
+    width: 100%;
+  }
+
+  #about .summary p {
+    font-size: 18px;
+  }
+
+  #intro .message {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 640px) {
+  #about .links {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  #about .photo,
+  #about .summary {
+    margin: 0;
+  }
+
+  #about .links {
+    border: 0;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  #intro .message {
+    font-size: 34px;
+    margin: 35% auto 0 auto;
+    padding: 10px 20px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 640px) {
+  #about .summary {
+    margin-left: 15px;
+  }
+
+  #about .summary h2 {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 480px) {
+  footer .links span,
+  footer .links span a {
+    font-size: 14px;
+  }
+
+  footer .links ul {
+    float: none;
+    margin: 0 auto 20px auto;
+    width: 310px;
+  }
+
+  footer .links .copy {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    right: 0;
+    width: 180px;
+  }
+
+  #about {
+    margin-bottom: 100px;
+    max-width: 320px;
+  }
+
+  #about .links {
+    font-size: 0;
+  }
+
+  #about .links a {
+    font-size: 15px;
+  }
+
+  #about .links a:first-child {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+  }
+
+  #about .links a:last-child {
+    padding-left: 10px;
+  }
+
+  #about .summary h2 {
+    font-size: 34px;
+  }
+
+  #intro .message {
+    margin: 6% auto 0 auto;
+  }
+
+  #intro .message,
+  #intro .message a,
+  #intro .message strong {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  #projects {
+    position: relative;
+    top: -8px;
+  }
+}

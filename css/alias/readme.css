@@ -1,0 +1,176 @@
+@import url('/css/fonts.css');
+
+/**
+ * Global overrides.
+ */
+html {
+  background-color: #f7f7f7;
+  background-image: url('/images/noise.png');
+}
+
+body {
+  background-color: #fff;
+  border: 1px solid #eee;
+  font-family: Lato, serif;
+  font-size: 17px;
+  margin: 30px auto;
+  padding: 15px 30px 30px 30px;
+  width: 800px;
+}
+
+a {
+  color: #3399cc;
+  cursor: pointer;
+}
+
+a.back {
+  color: #bbb;
+  display: block;
+  float: right;
+  font-size: 13px;
+  height: 20px;
+  position: relative;
+  right: 10px;
+}
+
+h1, h2, h3, h4 {
+  clear: right;
+  font-family: Montserrat, serif;
+  font-weight: normal;
+  position: relative;
+}
+
+h1 {
+  font-size: 50px;
+  height: 30px;
+  left: -5px;
+  margin-top: 0;
+}
+
+h1 img {
+  vertical-align: -12px;
+}
+
+h2 {
+  height: 15px;
+}
+
+h3 {
+  font-weight: bold;
+  height: 16px;
+}
+
+h3 a {
+  color: #282828;
+  cursor: default;
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin: 20px 0;
+  position: relative;
+}
+
+table th {
+  background-color: #f7f7f7;
+}
+
+table td, th {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+dl {
+  font-family: initial;
+}
+
+dl strong {
+  color: #660066;
+}
+
+code {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 0 2px;
+}
+
+pre {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+pre em {
+  font-weight: bold;
+}
+
+samp {
+  background-color: #000;
+  border: 1px solid #ddd;
+  color: #00cc00;
+  display: block;
+  font-family: Courier, serif;
+  font-size: 15px;
+  padding: 5px;
+  white-space: pre;
+}
+
+ol, ul {
+  margin-bottom: 20px;
+}
+
+img.preview {
+  display: block;
+  left: -7px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 10px;
+}
+
+/**
+ * CSS3 supported effects.
+ */
+body {
+  box-shadow: 0 0 10px #eee;
+  border-radius: 7px;
+  tab-size: 6;
+}
+
+pre {
+  border-radius: 5px;
+  tab-size: 4;
+}
+
+/**
+ * 3rd-party elements.
+ */
+img.forkme_ribbon {
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+img.build_status {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}

@@ -1,0 +1,63 @@
+@import url('/css/fonts.css');
+
+/**
+ * Global overrides.
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Lato, serif;
+  font-size: 14px;
+  user-select: none;
+}
+
+a {
+  color: #3399cc;
+}
+
+a:active {
+  color: #bbb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/**
+ * Demo page overrides.
+ */
+#about {
+  background-color: #000;
+  border-bottom: 1px solid #2b2b2b;
+  color: #fff;
+  font-size: 17px;
+  padding: 6px;
+  text-align: center;
+}
+
+#footer {
+  background-color: #fff;
+  bottom: 0;
+  font-size: 16px;
+  padding: 10px 0 20px 0;
+  position: absolute;
+  width: 100%;
+}
+
+#footer span.copy {
+  color: #a7a7a7;
+  float: right;
+  position: relative;
+  right: 20px;
+}
+
+/**
+ * CSS3 supported effects.
+ */
+#about {
+  box-shadow: 0 0 8px #2b2b2b;
+}
