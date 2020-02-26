@@ -36,6 +36,7 @@ footer {
   padding: 10px 0;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 footer a {
@@ -263,7 +264,7 @@ footer .links .copy a {
   margin-top: 40px;
   padding: 10px 0;
   text-align: center;
-  width: inherit;
+  width: 570px;
 }
 
 #about .links a {
@@ -336,6 +337,10 @@ footer .links .copy a {
 
   #about .summary {
     margin-left: 20px;
+  }
+
+  #about .links {
+    width: 100%;
   }
 }
 
