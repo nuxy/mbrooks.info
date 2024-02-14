@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://mbrooks.info</loc>
-    <lastmod>2023-01-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-14T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mbrooks.info/pdf/Resume - General Guidance.pdf</loc>
-    <lastmod>2020-02-25T00:00:00+00:00</lastmod>
+    <loc>https://mbrooks.info/pdf/Resume - Employment History 1.pdf</loc>
+    <lastmod>2024-02-14T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mbrooks.info/pdf/Resume - Employment History.pdf</loc>
-    <lastmod>2012-05-25T00:00:00+00:00</lastmod>
+    <loc>https://mbrooks.info/pdf/Resume - Employment History 2.pdf</loc>
+    <lastmod>2024-02-14T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
